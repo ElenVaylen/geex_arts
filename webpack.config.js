@@ -61,11 +61,11 @@ module.exports = {
         }
       },
       {
-        test: /\.(png|svg|jpg|ico)$/,
+        test: /\.(gif|png|jpe?g|svg)$/i,
         use: {
           loader: 'file-loader',
           options: {
-            name: 'img/[name].[ext]'
+            name: 'img/[name].[ext]',
           }
         }
       }

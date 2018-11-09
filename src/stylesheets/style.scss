@@ -286,6 +286,8 @@ a:hover {
   background-position: top right;
   position: absolute;
   background-size: cover;
+  top: 0;
+  left: 0;
 }
 .slider_main__img_back:after {
   position: absolute;
@@ -559,17 +561,17 @@ a:hover {
   margin-top: 250px;
 }
 .section_style1__row2 .section_style1__img_back {
-  left: unset;
+  left: auto;
   top: -80px;
   right: 40px;
 }
 .section_style1__row2 .section_style1__img_front {
   background-image: url('../img/rectangle-6.png');
-  left: unset;
+  left: auto;
   right: 0;
 }
 .section_style1__row2 .section_style1__rectangle {
-  top: unset;
+  top: auto;
   bottom: 100%;
   left: 0;
   right: unset;
@@ -595,6 +597,7 @@ a:hover {
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
+  z-index: 2;
 }
 .vertical_text:before, .vertical_text:after {
   height: 325px;
@@ -613,11 +616,11 @@ a:hover {
   bottom: -30px;
 }
 .vertical_text__ins {
-  transform: rotate(180deg) translateY(0);
-  -webkit-transform: rotate(180deg) translateY(0);
-  -moz-transform: rotate(180deg) translateY(0);
-  -ms-transform: rotate(180deg) translateY(0);
-  -o-transform: rotate(180deg) translateY(0);
+  transform: skew(180deg) translateY(0);
+  -webkit-transform: skew(180deg) translateY(0);
+  -moz-transform: skew(180deg) translateY(0);
+  -ms-transform: skew(180deg) translateY(0);
+  -o-transform: skew(180deg) translateY(0);
   height: 100%;
   text-align: center;
 }
